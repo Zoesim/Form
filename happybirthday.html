@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday</title>
+</head>
+
+<body>
+  
+  <h1>Happy Birthday Message Center</h1>
+  <form>
+    <table style ="border-collapse: separate; border-spacing: 0 0.5rem;">
+     <tr> 
+    <td>
+      <label for="message">Message?</label>
+       </td>
+       <td>
+      <input type="text" id="message" name="message" placeholder="Happy birthday!">
+    </td>
+      </tr>
+      <tr>
+    <td>
+      <label for="email">Email address?</label>
+        </td>
+        <td>
+      <input type="email" id="email" name="email" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" placeholder="name@domain.com" required> 
+          
+    </td>
+      </tr>
+      <tr>
+    <td>
+      <label for="dateToSend">Date to send?</label>
+        </td>
+        <td>
+      <input type="date" id="dateToSend" name="dateToSend">
+    </td>
+      </tr>
+      <tr>
+    <td>
+      <label for="messageColor">Message color?</label>
+        </td>
+        <td>
+      <input type="color" id="messageColor" name="messageColor">
+    </td>
+      </tr>
+      <tr>
+    <td>
+      <label for="numBlinks">Number of blinks?</label>
+        </td>
+        <td>
+      <input type="number" id="numBlinks" name="numBlinks" min="0" max="10" value="0" placeholder="0">
+    </td>
+      </tr>
+      <tr>
+    <td>
+      <label for="musicVolume">Music volume</label>
+        </td>
+        <td>
+      <input type="range" min="0" max="50" value="20" id="musicVolume" name="musicVolume">
+    </td>
+      </tr>
+      <tr>
+    <td>
+      <input type="button" name="message" value="Send Birthday Message">
+    </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
